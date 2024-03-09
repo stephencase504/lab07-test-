@@ -1,0 +1,155 @@
+/* Body styling */
+body {
+  background-color: #191970; /* Midnight Blue background color */
+  font-family: "Alfarn", Arial, sans-serif; /* Font family */
+  text-align: center; /* Center text alignment */
+  transform: scale(1.0115); /* Scale of the webpage */
+}
+
+/* First-level headings styling */
+h1 {
+  color: #ffffff; /* White text color */
+  font-size: 100px; /* Font size */
+}
+
+/* Second-level headings styling */
+h2 {
+  color: #000000; /* Black text color */
+  font-size: 50px; /* Font size */
+}
+
+/* Paragraphs styling */
+p {
+  color: #ffd700; /* Gold text color */
+  font-size: 20px; /* Font size */
+}
+
+/* Footer styling */
+footer {
+  background-color: #ffffff; /* White background color */
+  padding: 1em 0; /* Padding at the top and bottom */
+}
+
+/* Anchor tags styling */
+a {
+  color: #ffd700; /* Gold text color */
+  text-decoration: none; /* No text decoration */
+  font-size: 24pt; /* Font size */
+  margin: 150px; /* Margin */
+  text-align: center; /* Center text alignment */
+}
+
+/* Ordered lists styling */
+ol {
+  color: #000000; /* Black text color */
+  font-size: 30pt; /* Font size */
+  padding: 0; /* No padding */
+  margin: 0; /* No margin */
+  display: flex; /* Flexible box layout */
+  flex-direction: column; /* Items stacked vertically */
+  align-items: center; /* Items aligned to the center */
+  list-style-type: none; /* No default numbering or bullet points */
+}
+
+/* Button container styling */
+.button-container {
+  text-align: center; /* Center text alignment */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Previous button styling */
+.prev-button, .next-button {
+  background-color: #ffffff; /* White for prev-button, Gold for next-button */
+  color: #191970; /* Midnight Blue text color */
+  padding: 20px 40px; /* Padding */
+  border: none; /* No border */
+  cursor: pointer; /* Cursor changes to a pointer when hovering */
+  font-family: "Alfarn", Arial, sans-serif; /* Font family */
+  font-size: 23.5pt; /* Font size */
+}
+
+/* Next button styling */
+.next-button {
+  background-color: #ffd700; /* Gold background color */
+}
+
+/* Gallery styling */
+.gallery {
+  display: flex; /* Flexible box layout */
+  justify-content: center; /* Items centered along the line */
+  align-items: center; /* Items centered perpendicular to the line */
+  height: 400px; /* Height of the gallery */
+  margin-bottom: 20px; /* Bottom margin */
+  perspective: 1200px; /* Perspective for 3D transforms */
+}
+
+/* Gallery images styling */
+.gallery img {
+  max-width: 100%; /* Maximum width */
+  max-height: 100%; /* Maximum height */
+  position: absolute; /* Absolute position */
+  opacity: 0; /* Start with an opacity of 0 */
+  width: 100%; /* Width */
+  height: 100%; /* Height */
+  object-fit: contain; /* Fit within their bounding box while maintaining their aspect ratio */
+  transition: opacity 1s, transform 1s; /* Transition their opacity and transform properties over 1 second */
+}
+
+/* Gallery images with the 'active' class styling */
+.gallery img.active {
+  opacity: 1; /* Fully visible */
+}
+
+/* Captions styling */
+.caption {
+  color: #ffffff; /* White text color */
+  font-size: 40px; /* Font size */
+}
+
+/* Define the fadeOut animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Start fully visible */
+    transform: scaleX(1); /* Start at original size */
+  }
+  100% {
+    opacity: 0; /* End completely transparent */
+    transform: scaleX(0); /* End with no width */
+  }
+}
+
+/* Define the fadeIn animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start completely transparent */
+    transform: scaleX(0); /* Start with no width */
+  }
+  100% {
+    opacity: 1; /* End fully visible */
+    transform: scaleX(1); /* End at original size */
+  }
+}
+
+/* Scroll container styling */
+#scroll-container {
+  overflow-x: auto; /* Horizontal scrollbar if necessary */
+  overflow-y: hidden; /* No vertical scrollbar */
+  -ms-overflow-style: none; /* IE and Edge scrollbar style */
+  scrollbar-width: none; /* Firefox scrollbar width */
+}
+
+/* Scroll container scrollbar styling for Chrome, Safari, and Opera */
+#scroll-container::-webkit-scrollbar {
+  display: none; /* No display */
+}
+
+/* Team container styling */
+#team-container {
+  white-space: nowrap; /* Prevent child divs from wrapping to the next line */
+  margin: -5px; /* Margin */
+}
+
+/* Team elements styling */
+.team {
+  display: inline-block; /* Display as inline-block */
+}
